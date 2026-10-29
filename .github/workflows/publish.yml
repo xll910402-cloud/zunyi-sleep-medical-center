@@ -1,0 +1,56 @@
+name: Publish Sleep Center
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout uploaded files
+        uses: actions/checkout@v6
+
+      - name: Merge the 12 upload batches
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          mkdir -p _site
+          for batch in 01 02 03 04 05 06 07 08 09 10 11 12; do
+            folders=("$batch"-*/)
+            if [ "${#folders[@]}" -ne 1 ]; then
+              echo "Expected one upload folder for batch $batch."
+              exit 1
+            fi
+            cp -R "${folders[0]}." _site/
+          done
+          test -s _site/index.html
+          test -s _site/en/index.html
+          test -d _site/assets
+          touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
