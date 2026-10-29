@@ -1,0 +1,16 @@
+.conference-lectures{margin-top:40px;padding-top:34px;border-top:1px solid var(--line);scroll-margin-top:190px}
+.lecture-feature{display:grid;grid-template-columns:1fr 1.05fr;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff}
+.lecture-feature-image{display:flex;align-items:center;justify-content:center;background:#f3eae3}
+.lecture-feature-image img{display:block;width:100%;height:auto;object-fit:contain}
+.lecture-feature-copy{padding:32px;min-width:0}
+.lecture-feature time{font-size:14px;font-weight:700;color:var(--blue-500)}
+.lecture-conference-name{font-size:15px;line-height:1.7;color:var(--muted);margin-top:10px}
+.lecture-feature h4{font-size:clamp(23px,2.1vw,28px);line-height:1.55;color:var(--blue-700);margin:15px 0}
+.lecture-speaker{font-size:15px;line-height:1.9;color:var(--ink)}
+.lecture-speaker a{color:var(--blue-500);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.lecture-summary{font-size:16px;line-height:1.9;color:var(--muted);margin-top:15px}
+.lecture-links{display:flex;flex-wrap:wrap;gap:14px 28px;margin-top:24px}
+.lecture-links a{display:inline-flex;gap:16px;color:var(--blue-500);font-size:15px;font-weight:700}
+.lecture-links a:hover{text-decoration:underline}
+.lecture-feature a:focus-visible{outline:3px solid #b88469;outline-offset:-3px}
+@media(max-width:800px){.lecture-feature{grid-template-columns:1fr}.lecture-feature-copy{padding:24px}.conference-lectures{scroll-margin-top:180px}}

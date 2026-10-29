@@ -1,0 +1,63 @@
+/* Bilingual navigation keeps the established warm color palette. */
+.language-switch{display:flex;align-items:center;gap:3px;padding:3px;border:1px solid #ddc9bb;border-radius:999px;background:#fffaf6;font-size:12px;font-weight:700;line-height:1.2;letter-spacing:0;z-index:2}
+.language-switch a,.language-switch span{display:block;min-width:40px;padding:7px 10px;text-align:center;border-radius:999px;white-space:nowrap}
+.language-switch a{color:#875148}
+.language-switch a:hover{background:#f1e3d9}
+.language-switch a:focus-visible{outline:3px solid #b98262;outline-offset:2px}
+.language-switch .language-current{background:#875148;color:#fff}
+.site-header:not(.article-site-header){height:auto;min-height:0;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:0}
+.site-header:not(.article-site-header) .brand{height:70px;padding:0 24px}
+.site-header:not(.article-site-header) nav#main-nav{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));position:static;width:100%;gap:4px;padding:7px 14px 9px;background:#f8f2ed;border-top:1px solid #ddc9bb;box-shadow:none}
+.site-header:not(.article-site-header) nav#main-nav a{display:flex;align-items:center;justify-content:center;min-height:36px;padding:5px 3px;border:0;border-radius:9px;text-align:center}
+.site-header:not(.article-site-header) .language-switch{position:absolute;top:15px;right:clamp(16px,4vw,64px)}
+.site-header:not(.article-site-header) .brand{max-width:calc(100% - 120px)}
+.article-site-header{height:auto;min-height:96px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 20px;padding-top:12px;padding-bottom:12px}
+.article-site-header .brand{grid-column:1;grid-row:1;min-width:0;max-width:100%}
+.article-site-header .language-switch{grid-column:2;grid-row:1;justify-self:end}
+.article-site-header nav{grid-column:1/-1;grid-row:2;justify-content:flex-end}
+html[lang="en"] body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+html[lang="en"] .brand strong{font-size:15px;letter-spacing:0;line-height:1.3}
+html[lang="en"] .brand small{font-size:11px;letter-spacing:.02em;line-height:1.3}
+html[lang="en"] .site-header:not(.article-site-header) .brand{height:auto;min-height:70px;padding-block:12px}
+html[lang="en"] .site-header:not(.article-site-header) nav#main-nav{gap:4px}
+html[lang="en"] .site-header:not(.article-site-header) nav#main-nav a{white-space:normal;line-height:1.25;font-size:13px;min-width:0;padding:7px 4px}
+html[lang="en"] .hero h1{font-size:clamp(40px,4.3vw,66px);line-height:1.13;letter-spacing:-.025em;text-wrap:balance}
+html[lang="en"] .hero-lead{font-size:clamp(19px,2vw,25px);line-height:1.4}
+html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] h4{letter-spacing:0;overflow-wrap:break-word;text-wrap:balance}
+html[lang="en"] .section-title h2,html[lang="en"] .section-top h2{font-size:clamp(29px,3vw,43px);line-height:1.2}
+html[lang="en"] .technique-copy h3{font-size:clamp(25px,2.5vw,36px);line-height:1.2}
+html[lang="en"] .facts strong{font-size:clamp(25px,3vw,43px);line-height:1.2}
+html[lang="en"] .facts strong span{font-size:14px;letter-spacing:0}
+html[lang="en"] .section-no,html[lang="en"] .eyebrow{letter-spacing:.1em;line-height:1.5}
+html[lang="en"] .phase-head{gap:16px}
+html[lang="en"] .phase-head>span{min-width:0;white-space:normal}
+html[lang="en"] .member-hero-copy h1{font-size:clamp(32px,4vw,54px)}
+html[lang="en"] .member-lead,html[lang="en"] .member-body section>p{line-height:1.8}
+html[lang="en"] .facility-highlights strong{font-size:clamp(25px,3vw,44px)}
+html[lang="en"] .detail-header h1{font-size:clamp(30px,4vw,49px);line-height:1.18}
+@media(max-width:1280px){.site-header:not(.article-site-header) nav#main-nav{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:620px){
+  .language-switch{font-size:11px;gap:1px}
+  .language-switch a,.language-switch span{min-width:35px;padding:7px 8px}
+  .site-header:not(.article-site-header) .brand{max-width:calc(100% - 98px);padding-left:16px;padding-right:0}
+  .site-header:not(.article-site-header) .language-switch{right:12px;top:16px}
+  .article-site-header{gap:9px 10px;padding-left:16px;padding-right:16px}
+  .article-site-header .brand{gap:8px}
+  .article-site-header nav a{white-space:normal}
+  html[lang="en"] .brand strong{font-size:12px;max-width:190px}
+  html[lang="en"] .brand small{font-size:10px;max-width:190px}
+  html[lang="en"] .site-header .brand-symbol{width:32px;height:32px;flex-shrink:0;font-size:21px}
+  html[lang="en"] .site-header .brand{gap:8px}
+  html[lang="en"] .hero h1{font-size:43px}
+  html[lang="en"] .hero-text{line-height:1.7}
+  html[lang="en"] .phase-head{display:block}
+  html[lang="en"] .phase-head h3{margin-top:8px}
+  html[lang="en"] .phase-head p{margin-top:10px}
+  html[lang="en"] .care-stages{display:grid;grid-template-columns:1fr}
+  html[lang="en"] .care-stages span{padding:10px 12px;text-align:left}
+  html[lang="en"] .care-stages b{display:inline;margin-right:8px}
+  html[lang="en"] .mini-care-flow{flex-wrap:wrap}
+  html[lang="en"] .facts strong{font-size:27px}
+  html[lang="en"] .facts p{font-size:12px}
+}
+@media print{.language-switch{display:none}}

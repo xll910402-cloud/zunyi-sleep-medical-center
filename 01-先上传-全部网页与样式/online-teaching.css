@@ -1,0 +1,16 @@
+.online-teaching{margin-top:40px;padding-top:34px;border-top:1px solid var(--line);scroll-margin-top:190px}
+.online-teaching-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.online-course{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.online-course-image{display:flex;align-items:center;justify-content:center;background:#f5efea;aspect-ratio:1.76;overflow:hidden}
+.online-course-image img{width:100%;height:100%;object-fit:contain}
+.online-course-copy{padding:26px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.online-course time{font-size:14px;font-weight:700;color:var(--blue-500)}
+.online-course-platform{font-size:14px;line-height:1.6;color:var(--muted);margin-top:8px}
+.online-course h4{font-size:23px;line-height:1.5;color:var(--blue-700);margin:14px 0}
+.online-course-lecturer{font-size:15px;color:var(--ink);margin-bottom:12px}
+.online-course-lecturer a{font-weight:700;color:var(--blue-500);text-decoration:underline;text-underline-offset:4px}
+.online-course-copy>p:not([class]){font-size:16px;line-height:1.9;color:var(--muted);margin-bottom:22px}
+.online-course-link{margin-top:auto;color:var(--blue-500);font-size:15px;font-weight:700;display:inline-flex;gap:24px;align-items:center}
+.online-course-link:hover{text-decoration:underline}
+.online-course a:focus-visible{outline:3px solid #b88469;outline-offset:-3px}
+@media(max-width:700px){.online-teaching-grid{grid-template-columns:1fr;gap:20px}.online-course-copy{padding:22px}.online-course h4{font-size:21px}.online-teaching{scroll-margin-top:180px}}
