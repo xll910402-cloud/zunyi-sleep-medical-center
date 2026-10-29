@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title">
+  <title id="title">女性健康科普示意图</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#d9eff9"/><stop offset="1" stop-color="#f3eaf4"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="666" cy="86" r="102" fill="#c7e4f1" opacity=".7"/>
+  <circle cx="120" cy="421" r="142" fill="#e9dce9" opacity=".65"/>
+  <rect x="183" y="83" width="434" height="335" rx="33" fill="#fff" stroke="#a9cbdc" stroke-width="8"/>
+  <path d="M183 167h434" stroke="#a9cbdc" stroke-width="8"/>
+  <path d="M276 65v49M524 65v49" stroke="#2f7897" stroke-width="18" stroke-linecap="round"/>
+  <g fill="#cee5ef"><circle cx="273" cy="229" r="22"/><circle cx="358" cy="229" r="22"/><circle cx="443" cy="229" r="22"/><circle cx="528" cy="229" r="22"/><circle cx="273" cy="306" r="22"/><circle cx="528" cy="306" r="22"/><circle cx="273" cy="377" r="22"/><circle cx="358" cy="377" r="22"/><circle cx="443" cy="377" r="22"/><circle cx="528" cy="377" r="22"/></g>
+  <path d="M400 335c-42-34-73-57-73-87 0-24 17-41 40-41 16 0 27 8 33 20 7-12 19-20 34-20 23 0 40 17 40 41 0 30-31 53-74 87Z" fill="#c887ae"/>
+</svg>
